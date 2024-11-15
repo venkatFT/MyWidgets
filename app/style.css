@@ -1,0 +1,96 @@
+/* Reset some basic elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Initially hide the company details section */
+.company-details {
+    display: none;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.required {
+    color: red;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;  /* Uniform gap between grid items */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 10px;  /* Increased padding for better touch */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;  /* Ensures fields take full width */
+    box-sizing: border-box;  /* Ensures padding is included in total width */
+    height: 40px;  /* Uniform height */
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;  /* Center the buttons */
+    gap: 10px;  /* Spacing between buttons */
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.create-seller {
+    background-color: green;
+}
+
+.done {
+    display: none;
+    background-color: blue;
+}
+
+.cancel {
+    background-color: red;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #333;
+}

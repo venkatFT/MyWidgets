@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Seller Information</h1>
+        <form id="seller-form">
+            <div class="form-section">
+                <h2>Seller Details</h2>
+                <div class="form-grid">
+                    <div class="form-row">
+                        <label for="sellerType">Seller Type<span class="required">*</span></label>
+                        <select id="sellerType" required>
+                            <option value="">Select...</option>
+                            <option value="Private_Seller">Private Seller</option>
+                            <option value="Dealership">Dealership</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="firstName">Seller First Name<span class="required">*</span></label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="lastName">Seller Last Name<span class="required">*</span></label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="sellerEmail">Seller Email<span class="required">*</span></label>
+                        <input type="email" id="sellerEmail" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="sellerPhone">Seller Phone<span class="required">*</span></label>
+                        <input type="tel" id="sellerPhone" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="sellerAddress">Seller Address<span class="required">*</span></label>
+                        <input type="text" id="sellerAddress" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="sellerCity">Seller City<span class="required">*</span></label>
+                        <input type="text" id="sellerCity" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="sellerProvince">Seller Province<span class="required">*</span></label>
+                        <select id="sellerProvince" required>
+                            <option value="">Select Province</option>
+                            <option value="Alberta">Alberta</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="New Brunswick">New Brunswick</option>
+                            <option value="Newfoundland Labrador">Newfoundland & Labrador</option>
+                            <option value="Northwest Territories">Northwest Territories</option>
+                            <option value="Nova Scotia">Nova Scotia</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Prince Edward Island">Prince Edward Island</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                            <option value="Yukon">Yukon</option>
+                            <!-- Additional provinces -->
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="postalCode">Seller Postal Code<span class="required">*</span></label>
+                        <input type="text" id="postalCode" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section company-details"> <!-- Add company-details class here -->
+                <h2>Company Details</h2>
+                <div class="form-grid">
+                    <div class="form-row">
+                        <label for="companyName">Company Name<span class="required">*</span></label>
+                        <input type="text" id="companyName" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="companyPhone">Company Phone<span class="required">*</span></label>
+                        <input type="tel" id="companyPhone" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="companyEmail">Company Email<span class="required">*</span></label>
+                        <input type="email" id="companyEmail" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="companyAddress">Company Address<span class="required">*</span></label>
+                        <input type="text" id="companyAddress" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="companyCity">Company City<span class="required">*</span></label>
+                        <input type="text" id="companyCity" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="companyProvince">Company Province<span class="required">*</span></label>
+                        <select id="companyProvince" required>
+                            <option value="">Select Province</option>
+                            <option value="Alberta">Alberta</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="New Brunswick">New Brunswick</option>
+                            <option value="Newfoundland Labrador">Newfoundland & Labrador</option>
+                            <option value="Northwest Territories">Northwest Territories</option>
+                            <option value="Nova Scotia">Nova Scotia</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Prince Edward Island">Prince Edward Island</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                            <option value="Yukon">Yukon</option>
+                            <!-- Additional provinces -->
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="companyPostalCode">Company Postal Code<span class="required">*</span></label>
+                        <input type="text" id="companyPostalCode" required>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="form-buttons">
+                <button type="submit" id="create-button" class="create-seller">Create Seller</button>
+                <button type="button" id="done-button" class="done">Done</button>
+                <button type="button" id="cancel-button" class="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://live.zwidgets.com/js-sdk/1.2/ZohoEmbededAppSDK.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
